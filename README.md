@@ -13,6 +13,12 @@ kubectl create namespace monitoring
 
 kubectl apply -f prometheus-config.yaml
 
+kubectl apply -f cluster-role.yaml
+
+kubectl apply -f service-account.yaml
+
+kubectl apply -f cluster-role-binding.yaml
+
 kubectl apply -f prometheus-deployment.yaml
 
 kubectl apply -f prometheus-service.yaml
